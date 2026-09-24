@@ -1,0 +1,1590 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="CAC and ROAS review for 10 Minute School English Centre, Jan-Sep 2026 against 2025, including the April 2026 switch to 2km branch-radius targeting.">
+<title>English Centre CAC Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* --- standalone reset (mirrors the hosted environment) --- */
+:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{-webkit-text-size-adjust:100%}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<style>
+:root{
+  --ground:#FBFAF8; --surface:#FFFFFF; --surface-2:#F4F1EE;
+  --ink:#231F20; --ink-2:#5B5553; --ink-3:#8C8481;
+  --rule:#E7E2DE; --rule-2:#D6CFCA;
+  --accent:#EB2026; --accent-ink:#C4161C; --accent-soft:#FCEBEA;
+  --s-kids:#EB2026; --s-ielts:#1D6FB8; --s-sej:#C68214; --s-ses:#0E8C7C;
+  --good-ink:#0E6B4F; --good-bg:#E4F2EB;
+  --warn-ink:#8A5A05; --warn-bg:#F8EEDB;
+  --shadow:0 1px 2px rgba(35,31,32,.05), 0 8px 24px -12px rgba(35,31,32,.18);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ground:#161413; --surface:#1F1C1B; --surface-2:#282423;
+    --ink:#F4F0EE; --ink-2:#B2ABA7; --ink-3:#847D79;
+    --rule:#332F2D; --rule-2:#433E3B;
+    --accent:#FF5B52; --accent-ink:#FF7A72; --accent-soft:#2C1A19;
+    --s-kids:#EE4B43; --s-ielts:#4C93DE; --s-sej:#B5851C; --s-ses:#13A48D;
+    --good-ink:#5BC79B; --good-bg:#163026;
+    --warn-ink:#DDA53C; --warn-bg:#312611;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#161413; --surface:#1F1C1B; --surface-2:#282423;
+  --ink:#F4F0EE; --ink-2:#B2ABA7; --ink-3:#847D79;
+  --rule:#332F2D; --rule-2:#433E3B;
+  --accent:#FF5B52; --accent-ink:#FF7A72; --accent-soft:#2C1A19;
+  --s-kids:#EE4B43; --s-ielts:#4C93DE; --s-sej:#B5851C; --s-ses:#13A48D;
+  --good-ink:#5BC79B; --good-bg:#163026;
+  --warn-ink:#DDA53C; --warn-bg:#312611;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:17px; line-height:1.62; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1000px; margin:0 auto; padding-inline:20px; padding-block:0 72px}
+.sans{font-family:Archivo,"Helvetica Neue",Arial,sans-serif}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:40px 28px; border-bottom:3px solid var(--ink)}
+.brand{display:flex; align-items:center; gap:18px; flex-wrap:wrap}
+.brand img{height:34px; width:auto}
+.brand img.logo-light{display:block}
+.brand img.logo-dark{display:none}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .brand img.logo-light{display:none}
+  :root:not([data-theme="light"]) .brand img.logo-dark{display:block}
+}
+:root[data-theme="dark"] .brand img.logo-light{display:none}
+:root[data-theme="dark"] .brand img.logo-dark{display:block}
+.brand .div{width:1px; height:26px; background:var(--rule-2)}
+.brand .unit{font-family:Archivo,sans-serif; font-size:12px; font-weight:600;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--ink-2)}
+h1{
+  font-family:Archivo,sans-serif; font-weight:800; font-size:clamp(34px,6.4vw,58px);
+  line-height:1.02; letter-spacing:-.033em; margin:26px 0 0; text-wrap:balance; max-width:16ch;
+}
+h1 em{font-style:normal; color:var(--accent)}
+.standfirst{margin:16px 0 0; max-width:60ch; font-size:19px; color:var(--ink-2)}
+.meta{display:flex; gap:10px 22px; flex-wrap:wrap; margin-top:22px;
+  font-family:Archivo,sans-serif; font-size:12px; font-weight:500;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--ink-3)}
+.meta b{color:var(--ink-2); font-weight:600}
+
+/* ---------- kpi ---------- */
+.kpis{display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
+  background:var(--rule); border:1px solid var(--rule); margin-top:30px}
+.kpi{background:var(--surface); padding:20px 18px 18px}
+.kpi .k{font-family:Archivo,sans-serif; font-size:10.5px; font-weight:600;
+  letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3)}
+.kpi .v{font-family:Archivo,sans-serif; font-weight:800; font-size:clamp(26px,4.2vw,36px);
+  letter-spacing:-.03em; line-height:1.08; margin-top:9px; font-variant-numeric:tabular-nums}
+.kpi .v .cur{font-size:.52em; font-weight:600; color:var(--ink-3); margin-right:.18em;
+  letter-spacing:.03em; vertical-align:.2em}
+.kpi .n{font-size:13.5px; color:var(--ink-2); margin-top:5px; line-height:1.35}
+@media(max-width:760px){.kpis{grid-template-columns:repeat(2,1fr)}}
+
+/* ---------- sections ---------- */
+section{margin-top:60px}
+.eyebrow{font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--accent-ink);
+  display:flex; align-items:center; gap:11px}
+.eyebrow::after{content:""; flex:1; height:1px; background:var(--rule)}
+h2{font-family:Archivo,sans-serif; font-weight:700; font-size:clamp(25px,3.5vw,33px);
+  letter-spacing:-.024em; line-height:1.14; margin:15px 0 0; text-wrap:balance; max-width:22ch}
+h3{font-family:Archivo,sans-serif; font-weight:700; font-size:16px; letter-spacing:-.005em;
+  margin:26px 0 6px}
+p{margin:14px 0 0; max-width:66ch}
+.lede{font-size:19.5px; color:var(--ink); max-width:58ch}
+strong{font-weight:600}
+.pull{font-family:Archivo,sans-serif; font-weight:600; font-size:clamp(19px,2.7vw,23px);
+  line-height:1.36; letter-spacing:-.018em; color:var(--ink); max-width:26ch;
+  border-left:3px solid var(--accent); padding-left:18px; margin:28px 0 0}
+
+/* ---------- figures ---------- */
+figure{margin:28px 0 0; background:var(--surface); border:1px solid var(--rule);
+  border-radius:3px; padding:20px 18px 14px; box-shadow:var(--shadow)}
+.fig-h{display:flex; justify-content:space-between; align-items:baseline; gap:14px;
+  flex-wrap:wrap; margin-bottom:4px}
+.fig-t{font-family:Archivo,sans-serif; font-weight:700; font-size:15px; letter-spacing:-.008em}
+figcaption{font-size:13.5px; color:var(--ink-2); margin-top:10px; line-height:1.5; max-width:72ch}
+.legend{display:flex; gap:14px; flex-wrap:wrap; font-family:Archivo,sans-serif;
+  font-size:12px; font-weight:500; color:var(--ink-2)}
+.legend span{display:inline-flex; align-items:center; gap:6px}
+.dot{width:9px; height:9px; border-radius:50%; flex:none}
+svg{display:block; width:100%; height:auto; overflow:visible}
+.ax{font-family:Archivo,sans-serif; font-size:11px; fill:var(--ink-3); font-weight:500}
+.axt{font-family:Archivo,sans-serif; font-size:10.5px; fill:var(--ink-3);
+  font-weight:600; letter-spacing:.11em; text-transform:uppercase}
+.gl{stroke:var(--rule); stroke-width:1}
+.lbl{font-family:Archivo,sans-serif; font-size:12px; font-weight:700; fill:var(--ink)}
+.lbl-s{font-family:Archivo,sans-serif; font-size:11px; font-weight:600; fill:var(--ink-2)}
+
+/* ---------- table ---------- */
+.tw{margin-top:26px; overflow-x:auto; border:1px solid var(--rule); border-radius:3px;
+  background:var(--surface); box-shadow:var(--shadow)}
+table{border-collapse:collapse; width:100%; min-width:720px;
+  font-family:Archivo,sans-serif; font-size:14px}
+th{font-size:10.5px; font-weight:700; letter-spacing:.11em; text-transform:uppercase;
+  color:var(--ink-3); text-align:right; padding:14px 14px 10px; border-bottom:1px solid var(--rule-2);
+  white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+td{padding:14px; border-bottom:1px solid var(--rule); text-align:right;
+  font-variant-numeric:tabular-nums; color:var(--ink-2)}
+tbody tr:last-child td{border-bottom:none}
+.prod{display:flex; align-items:center; gap:9px; font-weight:700; color:var(--ink); font-size:15px}
+.bar-i{width:3px; height:19px; border-radius:2px; flex:none}
+td.num{color:var(--ink); font-weight:600}
+.pill{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.05em;
+  text-transform:uppercase; padding:4px 9px; border-radius:2px; white-space:nowrap}
+.pill.go{background:var(--good-bg); color:var(--good-ink)}
+.pill.hold{background:var(--warn-bg); color:var(--warn-ink)}
+
+/* ---------- actions ---------- */
+ol.acts{list-style:none; counter-reset:a; padding:0; margin:26px 0 0}
+ol.acts li{counter-increment:a; display:grid; grid-template-columns:38px 1fr; gap:16px;
+  padding:17px 0; border-top:1px solid var(--rule); align-items:start}
+ol.acts li::before{content:counter(a,decimal-leading-zero);
+  font-family:Archivo,sans-serif; font-weight:800; font-size:14px; color:var(--accent);
+  letter-spacing:-.02em; padding-top:3px}
+ol.acts b{font-family:Archivo,sans-serif; font-weight:700; font-size:16px; color:var(--ink);
+  display:block; letter-spacing:-.008em}
+ol.acts span{display:block; font-size:16px; color:var(--ink-2); margin-top:3px; max-width:62ch}
+ol.acts .val{font-family:Archivo,sans-serif; font-size:12px; font-weight:700; color:var(--accent-ink);
+  letter-spacing:.03em; margin-top:7px; display:inline-block; background:var(--accent-soft);
+  padding:3px 9px; border-radius:2px}
+
+/* ---------- callout ---------- */
+.callout{margin:26px 0 0; border:1px solid var(--rule-2); border-left:3px solid var(--ink-3);
+  background:var(--surface-2); border-radius:3px; padding:18px 20px}
+.callout b{font-family:Archivo,sans-serif; font-size:13px; font-weight:700; color:var(--ink);
+  letter-spacing:.02em; display:block}
+.callout p{margin:9px 0 0; font-size:15.5px; color:var(--ink-2); max-width:70ch}
+
+/* ---------- contents ---------- */
+nav.toc{margin-top:26px; display:flex; gap:8px; flex-wrap:wrap}
+nav.toc a{font-family:Archivo,sans-serif; font-size:12px; font-weight:600; letter-spacing:.04em;
+  text-decoration:none; color:var(--ink-2); border:1px solid var(--rule-2); border-radius:2px;
+  padding:6px 11px; background:var(--surface)}
+nav.toc a:hover{border-color:var(--accent); color:var(--accent-ink)}
+nav.toc a:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+.part{margin-top:68px; display:flex; align-items:baseline; gap:14px;
+  border-top:3px solid var(--ink); padding-top:14px}
+.part .n{font-family:Archivo,sans-serif; font-weight:800; font-size:13px; color:var(--accent);
+  letter-spacing:.06em}
+.part .t{font-family:Archivo,sans-serif; font-weight:700; font-size:15px; letter-spacing:.02em;
+  text-transform:uppercase; color:var(--ink)}
+.part + section{margin-top:34px}
+
+/* ---------- heatmap / alloc tables ---------- */
+.hmw{margin-top:26px; overflow-x:auto}
+.scale{display:flex; align-items:center; gap:8px; font-family:Archivo,sans-serif; font-size:11.5px;
+  font-weight:600; color:var(--ink-2); margin-top:12px; flex-wrap:wrap}
+.scale i{width:22px; height:11px; border-radius:2px; display:inline-block}
+
+/* ---------- notes ---------- */
+.notes{margin-top:30px; background:var(--surface-2); border-radius:3px; padding:24px 24px 26px}
+.notes h2{font-size:20px; margin:0}
+.notes .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(248px,1fr));
+  gap:20px 32px; margin-top:18px}
+.notes p{margin:0; font-size:15px; color:var(--ink-2); max-width:none}
+.notes p b{font-family:Archivo,sans-serif; font-size:13px; font-weight:700; color:var(--ink);
+  display:block; margin-bottom:3px; letter-spacing:-.003em}
+.foot{margin-top:44px; padding-top:18px; border-top:1px solid var(--rule);
+  font-family:Archivo,sans-serif; font-size:12px; color:var(--ink-3); line-height:1.6}
+
+/* ---------- tooltip ---------- */
+#tip{position:fixed; z-index:50; pointer-events:none; opacity:0; transition:opacity .11s;
+  background:var(--ink); color:var(--ground); font-family:Archivo,sans-serif; font-size:12px;
+  font-weight:500; padding:7px 10px; border-radius:3px; line-height:1.45; white-space:nowrap;
+  box-shadow:0 6px 18px -6px rgba(0,0,0,.45)}
+#tip b{font-weight:700}
+.hit{cursor:pointer}
+@media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <div class="brand">
+    <img class="logo-light" src="data:image/png;base64,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" alt="10 Minute School">
+    <img class="logo-dark" src="data:image/png;base64,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" alt="10 Minute School">
+    <div class="div"></div>
+    <div class="unit">English Centre &middot; Media Buying</div>
+  </div>
+  <h1>What a student actually <em>costs us</em></h1>
+  <p class="standfirst">Nine months across four products, read against last year. Conversion improved in
+  every product we can compare &mdash; and CAC still rose 26%, because leads cost 54% more.</p>
+  <div class="meta">
+    <div>Period <b>Jan&ndash;Sep 2026</b></div>
+    <div>Vertical <b>Offline</b></div>
+    <div>Currency <b>BDT</b></div>
+    <div>Issued <b>24 Sep 2026</b></div>
+  </div>
+  <nav class="toc" aria-label="Contents">
+    <a href="#stand">1 &middot; Where we stand</a>
+    <a href="#says">2 &middot; What the data says</a>
+    <a href="#do">3 &middot; What to do</a>
+    <a href="#caveats">4 &middot; Caveats</a>
+  </nav>
+</header>
+
+<div class="kpis">
+  <div class="kpi"><div class="k">Ad spend</div><div class="v"><span class="cur">BDT</span>8.07M</div>
+    <div class="n">Media only, Jan&ndash;Sep</div></div>
+  <div class="kpi"><div class="k">Admissions</div><div class="v">4,194</div>
+    <div class="n">From 90,978 leads</div></div>
+  <div class="kpi"><div class="k">Blended CAC</div><div class="v"><span class="cur">BDT</span>1,925</div>
+    <div class="n">11.8% of course value</div></div>
+  <div class="kpi"><div class="k">CAC vs 2025</div><div class="v" style="color:var(--accent)">+26%</div>
+    <div class="n">Like-for-like, SEJ and IELTS</div></div>
+</div>
+
+<div class="part" id="stand"><span class="n">PART 1</span><span class="t">Where we stand</span></div>
+
+<section>
+  <div class="eyebrow">Scorecard</div>
+  <h2>Where each product stands</h2>
+  <p class="lede">CAC matters relative to what the course sells for. That ratio, not raw CAC, is the
+  column to read.</p>
+
+  <div class="tw">
+    <table>
+      <thead><tr>
+        <th>Product</th><th>Spend</th><th>CAC</th><th>Course value</th>
+        <th>CAC of value</th><th>Show-up</th><th>CAC trend</th><th>Call</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td><div class="prod"><span class="bar-i" style="background:var(--s-kids)"></span>Kids</div></td>
+          <td>1,600,711</td><td class="num">1,526</td><td>21,958</td><td class="num">6.9%</td>
+          <td>22.7%</td><td><svg class="sp" data-k="Kids" viewBox="0 0 96 26"></svg></td>
+          <td><span class="pill go">Scale</span></td>
+        </tr>
+        <tr>
+          <td><div class="prod"><span class="bar-i" style="background:var(--s-ielts)"></span>IELTS</div></td>
+          <td>2,546,890</td><td class="num">1,707</td><td>10,738</td><td class="num">15.9%</td>
+          <td>16.0%</td><td><svg class="sp" data-k="IELTS" viewBox="0 0 96 26"></svg></td>
+          <td><span class="pill go">Scale</span></td>
+        </tr>
+        <tr>
+          <td><div class="prod"><span class="bar-i" style="background:var(--s-sej)"></span>SEJ</div></td>
+          <td>2,346,754</td><td class="num">2,754</td><td>27,467</td><td class="num">10.0%</td>
+          <td>8.2%</td><td><svg class="sp" data-k="SEJ" viewBox="0 0 96 26"></svg></td>
+          <td><span class="pill hold">Fix show-up</span></td>
+        </tr>
+        <tr>
+          <td><div class="prod"><span class="bar-i" style="background:var(--s-ses)"></span>SES</div></td>
+          <td>1,578,844</td><td class="num">1,971</td><td>7,118</td><td class="num">27.7%</td>
+          <td>10.6%</td><td><svg class="sp" data-k="SES" viewBox="0 0 96 26"></svg></td>
+          <td><span class="pill hold">Hold flat</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Kids &mdash; the best economics, not the best trend</h3>
+  <p>Kids returns the most revenue on the smallest budget, has the best show-up rate we run at 22.7%, and
+  its CAC-to-value ratio of 6.9% is the best in the portfolio by a wide margin. All of that is true of
+  2026 as it stands. What is not true is that Kids escaped the year's decline: its headline year-on-year
+  gain rests on a comparison window containing its launch month, and once that is excluded its CAC rose
+  29% like everything else.</p>
+
+  <h3>IELTS &mdash; steady, but down on last year</h3>
+  <p>The most stable product month to month, and still 22% below its 2025 return. Its 15.9% CAC-to-value
+  ratio looks worse than SEJ's only because the IELTS course sells for BDT 10,738 against SEJ's BDT 27,467.
+  Per taka of course value it still acquires more efficiently than SEJ does.</p>
+
+  <h3>SEJ &mdash; the biggest recoverable pool, and the biggest fall</h3>
+  <p>Highest course value in the portfolio at BDT 27,467, best close rate at 45.3%, worst CAC. At an 8.2%
+  show-up rate, 92 of every 100 registrations evaporate before the class. September posted a CAC of
+  BDT 6,969, the worst month any product has recorded this year. SEJ also carries the year's steepest
+  decline: CAC up 53% and ROAS down a third against 2025.</p>
+
+  <h3>SES &mdash; recovering, but do not push it</h3>
+  <p>CAC eats 27.7% of course value, three times the ratio Kids runs at. But it is improving fastest:
+  CAC down 56% from the first third of the year to the last, and September was its best month at
+  BDT 1,086 and 6&times; ROAS. Hold it there. SES is the one product where CAC climbs sharply
+  with spend &mdash; correlating at <strong>+0.80</strong>, against +0.13 to +0.31 for the others. Its
+  audience saturates.</p>
+</section>
+
+<section>
+  <div class="eyebrow">Returns</div>
+  <h2>Return on ad spend, against last year</h2>
+  <p class="lede">Three of four products are above the 3.0&times; floor with room to spare. The interesting
+  column is the change.</p>
+
+  <div class="tw">
+    <table>
+      <thead><tr>
+        <th>Product</th><th>2026 ROAS</th><th>2025, same months</th><th>2026, same months</th>
+        <th>Change</th><th>2025 full year</th><th>Months compared</th>
+      </tr></thead>
+      <tbody>
+        <tr><td><div class="prod"><span class="bar-i" style="background:var(--s-kids)"></span>Kids</div></td>
+          <td class="num">14.4&times;</td><td>9.5&times;</td><td>11.7&times;</td>
+          <td class="num" style="color:var(--good-ink)">+23%</td><td>9.3&times;</td><td>3</td></tr>
+        <tr><td><div class="prod"><span class="bar-i" style="background:var(--s-ielts)"></span>IELTS</div></td>
+          <td class="num">6.3&times;</td><td>7.5&times;</td><td>6.3&times;</td>
+          <td class="num" style="color:var(--warn-ink)">&minus;16%</td><td>7.7&times;</td><td>9</td></tr>
+        <tr><td><div class="prod"><span class="bar-i" style="background:var(--s-sej)"></span>SEJ</div></td>
+          <td class="num">10.0&times;</td><td>12.9&times;</td><td>10.0&times;</td>
+          <td class="num" style="color:var(--warn-ink)">&minus;23%</td><td>12.3&times;</td><td>9</td></tr>
+        <tr><td><div class="prod"><span class="bar-i" style="background:var(--s-ses)"></span>SES</div></td>
+          <td class="num">3.6&times;</td><td>&mdash;</td><td>&mdash;</td>
+          <td>&mdash;</td><td>4.2&times;</td><td>0</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Only Kids improved, and only over three months. SEJ was the strongest product in the portfolio last
+  year at 12.9&times; and has lost a quarter of that. IELTS has lost a sixth. SES has no meaningful 2025
+  history &mdash; the only month on file is December.</p>
+
+  <p>Worth holding in mind while reading the rest: ROAS is gross revenue over media spend. It carries no
+  delivery cost, so a 3.3&times; product is thinner than it looks once classrooms and staff are counted.</p>
+</section>
+
+<div class="part" id="says"><span class="n">PART 2</span><span class="t">What the data says</span></div>
+
+<section>
+  <div class="eyebrow">The headline</div>
+  <h2>Conversion got better. CAC got worse anyway.</h2>
+  <p class="lede">Against the same nine months of 2025, SEJ and IELTS together turned a higher share of
+  leads into students &mdash; and still paid <strong>26% more</strong> for each one.</p>
+
+  <figure>
+    <div class="fig-h">
+      <div class="fig-t">What moved CAC between 2025 and 2026</div>
+    </div>
+    <svg id="br" viewBox="0 0 760 280" role="img"
+      aria-label="CAC rose from 1,654 to 2,088: lead price added 895 and better conversion gave back 461."></svg>
+    <figcaption>SEJ and IELTS, January to September, the only products with a full comparison. Kids has
+    three months; SES has none.</figcaption>
+  </figure>
+
+  <p>Lead-to-admission conversion went from <strong>4.04%</strong> to <strong>4.93%</strong>, a 22%
+  improvement. On its own that would have pulled CAC down to about <strong>1,355</strong> &mdash;
+  comfortably better than last year.</p>
+
+  <p>But cost per lead went from <strong>BDT 67</strong> to <strong>BDT 103</strong>, up 54%. That added
+  895 to CAC. The funnel gave back 461 of it. The net is +434, and a portfolio doing more work for less
+  money.</p>
+
+  <p class="pull">The funnel team delivered. Media pricing ate the gain and then some.</p>
+
+  <p>The scale of it is worth sitting with. Had cost per lead simply held at last year's level, the same
+  spend would have produced roughly <strong>3,612 admissions instead of 2,344</strong> across those two
+  products &mdash; about <strong>BDT 21M</strong> of additional revenue. That single line is larger than
+  every recommendation in Part 3 combined.</p>
+
+  <p>Most of that increase has a known cause. From April 2026 these campaigns moved from broad
+  targeting to a 2km radius around the branches, shrinking the addressable audience dramatically. The
+  section on the targeting switch below tests that against the data and sizes what it cost.</p>
+</section>
+
+<section>
+  <div class="eyebrow">Efficiency</div>
+  <h2>Cheap leads are not cheap students</h2>
+  <p class="lede">Across 36 product-months, what we pay for a lead tells us nothing about what we pay
+  for a student. The correlation is <strong>+0.10</strong> &mdash; statistically nothing.</p>
+
+  <figure>
+    <div class="fig-h">
+      <div class="fig-t">Cost per lead vs cost per student</div>
+      <div class="legend" id="lg1"></div>
+    </div>
+    <svg id="sc" viewBox="0 0 760 400" role="img"
+      aria-label="Scatter plot of cost per lead against CAC for 36 product-months, showing no upward slope."></svg>
+    <figcaption>Each dot is one product-month. If cheap leads produced cheap students the cloud would
+    slope upward. It does not.</figcaption>
+  </figure>
+
+  <p>Split the nine months into thirds by lead price and the point is blunt. The cheapest third averaged
+  <strong>BDT 58</strong> a lead and produced a CAC of <strong>BDT 2,218</strong>. The most expensive third
+  averaged <strong>BDT 149</strong> &mdash; 157% more &mdash; and produced <strong>BDT 2,634</strong>, only
+  19% worse.</p>
+
+  <p>SES proves it from one side: the cheapest leads in the portfolio, and CAC running from BDT 1,086 to
+  BDT 5,640. SEJ proves it from the other: July's leads cost BDT 250, the priciest of the year, and returned a
+  mid-range CAC of 2,333 at 10&times; ROAS.</p>
+
+  <p class="pull">A campaign judged on cost per lead can be winning on the scorecard and losing money.</p>
+</section>
+
+<section>
+  <div class="eyebrow">The bottleneck</div>
+  <h2>Eighty-eight in every hundred never arrive</h2>
+  <p class="lede">Show-up rate is what sets CAC &mdash; it correlates at <strong>&minus;0.53</strong>,
+  against +0.11 for lead price. Blended across nine months it is <strong>13.3%</strong>.</p>
+
+  <p>In absolute terms: <strong>90,978</strong> registrations produced <strong>12,105</strong> people in
+  a room. <strong>78,873</strong> registered and never came, and every taka behind them was spent.</p>
+
+  <p class="pull">We are paying full price for seventy-nine thousand people who never walk through the door.</p>
+
+  <p>What makes it worth chasing rather than accepting: the class itself works. <strong>34.6%</strong> of
+  people who attend go on to enroll, and SEJ closes <strong>45.3%</strong> of them. Whoever gets through
+  the door is the right person. There are simply far too few of them, and the rate is falling.</p>
+
+  <figure>
+    <div class="fig-h">
+      <div class="fig-t">Registrations that attend the free class</div>
+      <div class="legend">
+        <span><span class="dot" style="background:var(--ink-3)"></span>Jan&ndash;Apr</span>
+        <span><span class="dot" style="background:var(--accent)"></span>Jun&ndash;Sep</span>
+      </div>
+    </div>
+    <svg id="db" viewBox="0 0 760 250" role="img"
+      aria-label="Show-up rate fell in all four products between the first and last third of the year."></svg>
+    <figcaption>Every product ends the period lower than it started &mdash; and the first window
+    contains the Ramadan collapse, so the decline is real rather than a calendar artefact.</figcaption>
+  </figure>
+
+  <p>The gap is widest exactly where it costs most. SEJ sells the highest-value course in the portfolio
+  at BDT 27,467 and converts the fewest registrations into attendance &mdash; 8.2%, against Kids' 22.7% on
+  the same funnel. That one rate is the difference between SEJ's CAC of 2,754 and something near 1,700.</p>
+</section>
+
+<section>
+  <div class="eyebrow">Seasonality</div>
+  <h2>March costs us a third of a quarter</h2>
+  <p class="lede">Ramadan fell across March in 2025 and from 18 February to 19 March in 2026. In both
+  years attendance collapses while spend and lead flow carry on as normal.</p>
+
+  <figure>
+    <div class="fig-h">
+      <div class="fig-t">Leads generated vs people who attended</div>
+      <div class="legend">
+        <span><span class="dot" style="background:var(--ink-3)"></span>Leads</span>
+        <span><span class="dot" style="background:var(--accent)"></span>Attended</span>
+      </div>
+    </div>
+    <svg id="ga" viewBox="0 0 760 290" role="img"
+      aria-label="Leads swing between 7,900 and 18,900 a month while attendance stays between 600 and 2,900."></svg>
+    <figcaption>Shaded band marks Ramadan 2026. Attendance never rises to meet the lead flow in any
+    month, and in March it falls through the floor.</figcaption>
+  </figure>
+
+  <p>March 2026 against the average of the months either side of it: spend <strong>&minus;5%</strong>,
+  leads <strong>+2%</strong>, attendance <strong>&minus;53%</strong>, admissions <strong>&minus;48%</strong>.
+  CAC went to <strong>3,183</strong>, up 83% and the worst month of the year.</p>
+
+  <p>We kept buying at full price into a month when nobody could come. That is roughly
+  <strong>259 admissions</strong> and <strong>BDT 4.8M</strong> of revenue. Had show-up merely held at the
+  February&ndash;April norm, March CAC would have been 1,472 rather than 3,183.</p>
+
+  <p>One detail confirms the reading: March's close rate went <em>up</em>, to 36.7% from 33.1%. The few
+  who did attend during Ramadan were unusually serious. It is attendance that breaks, not intent. The 2025
+  data agrees &mdash; March was among SEJ's three worst show-up months of that entire year, at 2.3%.</p>
+
+  <h3>January is a fifth of the year</h3>
+  <p>The opposite pattern sits at the other end. January 2026 produced <strong>16,980 leads</strong> and
+  <strong>847 admissions</strong> &mdash; 20% of all admissions in nine months, in one month &mdash; at
+  12.7&times; ROAS, and it is the only month attendance cleared 2,900. The Bangladeshi academic year
+  starts in January, which fits. But January 2025 was the launch month for SEJ and IELTS, so it cannot
+  serve as a second reading: this pattern rests on one clean observation and should be treated as a
+  strong hypothesis rather than an established season.</p>
+
+  <p class="pull">Two months set the year. One we underbuy, the other we overbuy.</p>
+
+  <h3>What this means for 2027</h3>
+  <p>Ramadan moves about eleven days earlier each year. In 2027 it is expected to run from roughly
+  <strong>7 February to 8 March</strong>, with Eid around 8&ndash;9 March. The dip we have been absorbing
+  in March will land in February, and the recovery window opens in the second week of March.</p>
+
+  <p>Two things follow. Budget planned on a 2026 monthly shape will be pointed at the wrong weeks. And
+  spend should be thinned during the fasting
+  month and loaded into the fortnight after Eid, when intent returns.</p>
+</section>
+
+<section>
+  <div class="eyebrow">Revenue quality</div>
+  <h2>A 31% fall in revenue per student that CAC cannot see</h2>
+  <p class="lede">Blended revenue per admission dropped from <strong>19,434</strong> in January to
+  <strong>12,976</strong> in September. No product cut its prices.</p>
+
+  <figure>
+    <div class="fig-h">
+      <div class="fig-t">Share of admissions by product</div>
+      <div class="legend" id="lg2"></div>
+    </div>
+    <svg id="mx" viewBox="0 0 760 270" role="img"
+      aria-label="SEJ's share of admissions falls from 39% in January to 8% in September while IELTS rises from 23% to 48%."></svg>
+    <figcaption>Each column is one month's admissions, split by product. The mix, not the pricing, moved.</figcaption>
+  </figure>
+
+  <p>Taken product by product, revenue per admission is flat or rising: Kids is level, SEJ is up
+  <strong>22%</strong>, SES is level. Only IELTS slipped, by 14%. The entire blended decline is mix.</p>
+
+  <p>SEJ has gone from <strong>39%</strong> of admissions in January to <strong>8%</strong> in September.
+  IELTS has gone from 23% to <strong>48%</strong>. We are selling steadily more of a BDT 10,738 course and
+  steadily less of a BDT 27,467 one.</p>
+
+  <p>That is defensible as a strategy and alarming as an accident. Nothing in the current reporting would
+  tell you which it is, because CAC and ROAS both look stable while it happens. Revenue per admission
+  belongs on the dashboard next to them.</p>
+</section>
+
+<section>
+  <div class="eyebrow">Media</div>
+  <h2>The auction is not what is holding us back</h2>
+  <p class="lede">Within 2026, a bigger budget bought <em>cheaper</em> leads. Across years, leads got
+  71% more expensive anyway. Both things are true, and the gap between them is the open question.</p>
+
+  <p>In all four products, months with <em>more</em> leads had <em>cheaper</em> leads &mdash; the
+  correlation between lead volume and lead price runs from <strong>&minus;0.25</strong> for SES to
+  <strong>&minus;0.59</strong> for Kids. And budget converts to leads almost mechanically, correlating
+  between +0.83 and +0.97.</p>
+
+  <p>So within this year there is no diminishing return at the budgets we run &mdash; scale is not what
+  is pushing CPL up. Yet cost per lead is 71% above 2025 on the two products we can compare. Something
+  changed between the years that month-to-month volume does not explain, and this sheet holds no campaign,
+  audience or placement detail to test it against.</p>
+
+  <p>The one exception stays worth respecting: SES is the only product whose CAC climbs with spend, at
+  +0.80. That is a saturation signal in a narrow audience, not an auction-wide one.</p>
+</section>
+
+<section>
+  <div class="eyebrow">Allocation</div>
+  <h2>Budget is not following the returns</h2>
+
+  <figure>
+    <div class="fig-h">
+      <div class="fig-t">Share of budget vs share of revenue</div>
+      <div class="legend">
+        <span><span class="dot" style="background:var(--ink-3)"></span>Budget</span>
+        <span><span class="dot" style="background:var(--ink)"></span>Revenue (product colour)</span>
+      </div>
+    </div>
+    <svg id="al" viewBox="0 0 760 270" role="img"
+      aria-label="Kids returns more revenue share than budget share; SES returns far less."></svg>
+    <figcaption>Where the coloured bar is shorter than the grey one, the product consumes more budget
+    than it returns.</figcaption>
+  </figure>
+
+  <p>Kids and SES take almost the same share of budget &mdash; 19.8% and 19.6%. Kids returns
+  <strong>33.8%</strong> of revenue. SES returns <strong>8.4%</strong>.</p>
+
+  <p>The lead numbers explain how that survives review. SES generates a third of every registration the
+  team produces. It is excellent at the metric most likely to sit on a scorecard and poor at the one that
+  pays salaries. Any volume target written in registrations will keep pulling budget toward the product
+  that converts them worst.</p>
+</section>
+
+<section>
+  <div class="eyebrow">Year on year</div>
+  <h2>Only one product beat last year</h2>
+  <p class="lede">Like-for-like against 2025, SEJ and IELTS both bought roughly half as many leads at
+  much higher prices, and both ended up paying more per student. Only Kids improved.</p>
+
+  <figure>
+    <div class="fig-h">
+      <div class="fig-t">CAC, 2025 vs 2026</div>
+      <div class="legend">
+        <span><span class="dot" style="background:var(--ink-3)"></span>2025</span>
+        <span><span class="dot" style="background:var(--accent)"></span>2026</span>
+      </div>
+    </div>
+    <svg id="yy" viewBox="0 0 760 210" role="img"
+      aria-label="CAC rose for SEJ and IELTS between 2025 and 2026 and fell slightly for Kids."></svg>
+    <figcaption>Like-for-like months only: three for Kids, nine for SEJ and IELTS. SES has no 2025
+    comparison beyond a single December.</figcaption>
+  </figure>
+
+  <p>IELTS bought 50% fewer leads at 46% higher cost each. Its close rate improved from 31.5% to 37.6%
+  and its show-up rate held, so lead quality genuinely rose &mdash; and CAC still went up 21%, because the
+  price rose further than the quality did. Revenue fell 39%.</p>
+
+  <p><strong>SEJ is the steepest fall.</strong> Cost per lead up 63%, admissions down 43%, revenue down
+  41%, CAC up 33%. Its show-up rate actually improved, from 5.8% to 8.2% &mdash; but its close rate slipped
+  from 52.7% to 45.3%, and neither was enough against the lead price.</p>
+
+  <p><strong>Kids looks like the exception, and mostly is not.</strong> Its only 2025 overlap is
+  July&ndash;September, and July 2025 was its <em>launch month</em> &mdash; revenue per admission of 7,000
+  against a normal 20,000. Drop that one distorting month and compare August&ndash;September alone, and
+  Kids' CAC rose <strong>29%</strong> and its ROAS fell <strong>17%</strong>. It moved with the others,
+  not against them.</p>
+
+</section>
+
+<section>
+  <div class="eyebrow">The targeting switch</div>
+  <h2>The 2km radius is what changed &mdash; and it is costing more than it returns</h2>
+  <p class="lede">Through 2025 these campaigns ran broad: all of Bangladesh, or Dhaka, or Chittagong.
+  From <strong>April 2026</strong> they ran inside a 2km radius of the branches. That gives us something
+  close to a natural experiment.</p>
+
+  <p>January to March ran broad targeting in <em>both</em> years, so that window shows the underlying
+  year-on-year drift with targeting held constant. April to September ran broad in 2025 and 2km in 2026.
+  The difference between those two windows isolates the switch.</p>
+
+  <div class="tw">
+    <table>
+      <thead><tr>
+        <th>Year-on-year change</th><th>Jan&ndash;Mar<br>broad &rarr; broad</th>
+        <th>Apr&ndash;Sep<br>broad &rarr; 2km</th><th>Difference</th>
+      </tr></thead>
+      <tbody>
+        <tr><td><div class="prod">Cost per lead</div></td>
+          <td>+34%</td><td class="num">+66%</td>
+          <td class="num" style="color:var(--warn-ink)">+32 pp</td></tr>
+        <tr><td><div class="prod">Lead &rarr; admission</div></td>
+          <td>+53%</td><td class="num">+5%</td>
+          <td class="num" style="color:var(--warn-ink)">&minus;48 pp</td></tr>
+        <tr><td><div class="prod">Show-up rate</div></td>
+          <td>+23%</td><td class="num">+6%</td>
+          <td class="num" style="color:var(--warn-ink)">&minus;17 pp</td></tr>
+        <tr><td><div class="prod">CAC</div></td>
+          <td style="color:var(--good-ink)">&minus;12%</td><td class="num">+58%</td>
+          <td class="num" style="color:var(--warn-ink)">+70 pp</td></tr>
+        <tr><td><div class="prod">ROAS</div></td>
+          <td style="color:var(--good-ink)">+20%</td><td class="num">&minus;38%</td>
+          <td class="num" style="color:var(--warn-ink)">&minus;58 pp</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Read the first column on its own. With targeting unchanged, the business was getting
+  <strong>better</strong> year on year &mdash; CAC down 12%, ROAS up 20%. The deterioration is not a
+  general decline; it is concentrated in the months the radius changed.</p>
+
+  <p class="pull">Every month of the switch is in the red column. Every month without it is in the black.</p>
+
+  <h3>The thesis is right about closing. It is wrong about the price.</h3>
+  <p>The reasoning behind the change &mdash; that conversions cluster near the branches &mdash; shows up
+  clearly in the data, at exactly one stage. Attendance-to-admission rates jumped after April:</p>
+
+  <figure>
+    <div class="fig-h">
+      <div class="fig-t">Close rate before and after the switch, 2026</div>
+      <div class="legend">
+        <span><span class="dot" style="background:var(--ink-3)"></span>Jan&ndash;Mar (broad)</span>
+        <span><span class="dot" style="background:var(--accent)"></span>Apr&ndash;Sep (2km)</span>
+      </div>
+    </div>
+    <svg id="gx" viewBox="0 0 760 250" role="img"
+      aria-label="Close rate rose sharply after April for SEJ, IELTS and SES, and fell for Kids."></svg>
+    <figcaption>Share of people attending a free class who then enrolled. SES nearly tripled.</figcaption>
+  </figure>
+
+  <p>SEJ went from closing 39.8% of attendees to <strong>54.8%</strong>. IELTS from 32.8% to 40.3%. SES
+  from 12.2% to <strong>34.2%</strong>. People who live near a branch do enroll more readily once they
+  walk in. The premise was sound.</p>
+
+  <p>But two things went the other way. Show-up rate <em>fell</em> in all four products after April, and
+  cost per lead rose far more than closing improved. A 2km radius around a handful of branches is a very
+  small audience, and small audiences are expensive to reach repeatedly.</p>
+
+  <p>The arithmetic is unforgiving. Across April to September, had CAC stayed at its 2025 level for SEJ
+  and IELTS, the same spend would have bought <strong>2,224 admissions instead of 1,408</strong> &mdash;
+  <strong>816 more students</strong>, worth roughly <strong>BDT 12.9M</strong>.</p>
+
+  <div class="callout">
+    <b>What this is and is not</b>
+    <p>This is the strongest test the data allows, and it points one way. It is not a controlled
+    experiment. Seasonality, creative, budget levels and post-Ramadan recovery all moved in the same
+    window, and the April&ndash;September period contains the seasonally weakest months of the year.</p>
+    <p>One caveat cuts against the conclusion and deserves stating: January to March 2025 was the
+    <b>launch quarter</b> for SEJ and IELTS. Launch months usually carry unusually cheap leads and
+    unusually poor conversion, so the control window's apparent improvement is partly a product maturing
+    rather than targeting doing nothing. The gap is wide enough to survive that, but it is narrower than
+    the table alone suggests.</p>
+  </div>
+
+  <h3>What to do about it</h3>
+  <p>The answer is probably not reverting to nationwide. It is finding the radius where closing stays
+  strong and the audience is still large enough to buy cheaply &mdash; 2km is one point on that curve and
+  we have never tested another.</p>
+
+  <p>Run a proper geo holdout: split budget in the same weeks between the current 2km setting and a wider
+  ring &mdash; 5km, or district-level around each branch &mdash; and compare CPL, show-up and close rate
+  directly. Same period, same creative, same products. That removes every confound this analysis has had
+  to reason around, and it can be read within a month.</p>
+</section>
+
+<section>
+  <div class="eyebrow">Two years</div>
+  <h2>Why ROAS fell, in three numbers</h2>
+  <p class="lede">Return on ad spend is arithmetic, not mystery. It is the course price, times how well
+  the funnel converts, divided by what a lead costs. Nothing else goes into it.</p>
+
+  <figure>
+    <div class="fig-h">
+      <div class="fig-t">What each factor did to ROAS, 2025 &rarr; 2026</div>
+    </div>
+    <svg id="fx" viewBox="0 0 760 250" role="img"
+      aria-label="Course price and conversion both pushed ROAS up; cost per lead pulled it down 35%, for a net fall of 19.5%."></svg>
+    <figcaption>SEJ and IELTS combined, January to September. Effects are multiplicative, so they
+    compound rather than add.</figcaption>
+  </figure>
+
+  <p>Two of the three moved in our favour. Revenue per admission edged up <strong>1.6%</strong>. The
+  funnel converted <strong>22% better</strong>. Together those would have lifted ROAS by about a quarter.</p>
+
+  <p>Cost per lead rose 54%, which on its own cuts ROAS by <strong>35%</strong>. That one factor
+  outweighed the other two combined, and ROAS landed at 8.1&times; against 10.0&times;.</p>
+
+  <div class="tw">
+    <table>
+      <thead><tr>
+        <th>Product</th><th>Course price</th><th>Conversion</th><th>Cost per lead</th>
+        <th>Net effect on ROAS</th><th>ROAS</th>
+      </tr></thead>
+      <tbody>
+        <tr><td><div class="prod"><span class="bar-i" style="background:var(--s-kids)"></span>Kids</div></td>
+          <td class="num" style="color:var(--good-ink)">+13.6%</td>
+          <td class="num" style="color:var(--good-ink)">+12.4%</td>
+          <td class="num" style="color:var(--good-ink)">+3.5%</td>
+          <td class="num" style="color:var(--good-ink)">+23%</td><td>9.5&times; &rarr; 11.7&times;</td></tr>
+        <tr><td><div class="prod"><span class="bar-i" style="background:var(--s-ielts)"></span>IELTS</div></td>
+          <td class="num" style="color:var(--good-ink)">+2.5%</td>
+          <td class="num" style="color:var(--good-ink)">+20.5%</td>
+          <td class="num" style="color:var(--warn-ink)">+46.3%</td>
+          <td class="num" style="color:var(--warn-ink)">&minus;16%</td><td>7.5&times; &rarr; 6.3&times;</td></tr>
+        <tr><td><div class="prod"><span class="bar-i" style="background:var(--s-sej)"></span>SEJ</div></td>
+          <td class="num" style="color:var(--good-ink)">+3.0%</td>
+          <td class="num" style="color:var(--good-ink)">+22.2%</td>
+          <td class="num" style="color:var(--warn-ink)">+62.9%</td>
+          <td class="num" style="color:var(--warn-ink)">&minus;23%</td><td>12.9&times; &rarr; 10.0&times;</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>A rise in cost per lead is the only column where a bigger number is worse. Read the table that way
+  and the pattern is stark: <strong>all three products improved on price and conversion</strong>, and the
+  two whose lead cost jumped are the two whose ROAS fell. Kids' row flatters it &mdash; its comparison
+  window includes its launch month, and excluding that it fell too.</p>
+
+  <p class="pull">Every product got better at its job. Then we made the audience small and expensive.</p>
+
+  <h3>When cost per lead broke</h3>
+
+  <figure>
+    <div class="fig-h">
+      <div class="fig-t">Cost per lead by month, 21 months</div>
+    </div>
+    <svg id="cp" viewBox="0 0 760 280" role="img"
+      aria-label="Cost per lead stayed between 58 and 83 through all of 2025, then rose above that band from March 2026 and never returned."></svg>
+    <figcaption>SEJ and IELTS combined. The shaded band is the full range cost per lead occupied across
+    twelve months of 2025.</figcaption>
+  </figure>
+
+  <p>Through all of 2025, cost per lead never left a band of <strong>BDT 58 to 83</strong> &mdash; twelve
+  months, no exceptions. Only January 2026 sat inside it. February and March sat just above, during
+  Ramadan, when auction prices in Bangladesh routinely rise. From <strong>April 2026</strong> &mdash; the
+  month the 2km radius came in &mdash; it never returned: 111, 86, 151, 137, 103, 124.</p>
+
+  <p>The timing is not subtle. The one month of 2026 that ran broad targeting outside Ramadan, January,
+  cost BDT 78 a lead. The six months on the 2km radius averaged <strong>116</strong>.</p>
+
+  <h3>The funnel gains are real, and older than 2026</h3>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Period</th><th>Cost per lead</th><th>Lead &rarr; admission</th><th>CAC</th><th>ROAS</th></tr></thead>
+      <tbody>
+        <tr><td><div class="prod">2025 H1</div></td><td>64</td><td>3.48%</td><td class="num">1,852</td><td>9.1&times;</td></tr>
+        <tr><td><div class="prod">2025 H2</div></td><td>72</td><td>4.97%</td><td class="num">1,452</td><td>10.7&times;</td></tr>
+        <tr><td><div class="prod">2026 Jan&ndash;Sep</div></td><td>103</td><td>4.93%</td><td class="num">2,088</td><td>8.1&times;</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>The conversion improvement happened in the second half of <em>2025</em>, not this year &mdash; from
+  3.48% to 4.97% &mdash; and 2026 has simply held it at 4.93%. So the funnel work is a completed
+  achievement being maintained, not an ongoing gain. There is nothing left to harvest there while cost
+  per lead keeps climbing.</p>
+
+  <h3>Most of the revenue fall was a decision, not a failure</h3>
+  <p>Revenue across SEJ and IELTS fell <strong>BDT 26.6M</strong>, or 40%. That number has been read as
+  a performance collapse. It mostly is not.</p>
+
+  <p>Spend on those two products was cut <strong>26%</strong>. Had ROAS held at last year's 10.0&times;,
+  the smaller budget would still have produced about BDT 49.0M rather than 66.0M. So roughly
+  <strong>BDT 17.0M of the decline &mdash; 64% of it &mdash; is simply the result of spending less</strong>.
+  The remaining BDT 9.5M, 36%, is the efficiency loss.</p>
+
+  <p>That distinction matters for how this gets discussed. If the budget cut was deliberate, two thirds of
+  the revenue drop was bought knowingly. If it was not, the more urgent question is why spend fell 26%
+  while lead volume fell <strong>52%</strong> &mdash; we did not just buy less, we got much less for what
+  we did buy.</p>
+</section>
+
+<div class="part" id="do"><span class="n">PART 3</span><span class="t">What to do</span></div>
+
+<section>
+  <div class="eyebrow">Calendar</div>
+  <h2>When to push which product</h2>
+  <p class="lede">Each product has its own season, and two of them run opposite to each other. This is the
+  single cheapest lever on the list, because it moves money that is already budgeted.</p>
+
+  <figure>
+    <div class="fig-h">
+      <div class="fig-t">Cost per student by month, against each product's own average</div>
+    </div>
+    <div class="hmw"><svg id="hm" viewBox="0 0 760 250" role="img"
+      aria-label="Heatmap of CAC index by product and month; Kids and SEJ are cheapest in January, SES is cheapest in August and September."></svg></div>
+    <div class="scale">
+      <i style="background:var(--s-ses)"></i> 0.5&times; &mdash; far cheaper than usual
+      <i style="background:var(--rule-2)"></i> 1.0&times; &mdash; its own average
+      <i style="background:var(--accent)"></i> 2.5&times;+ &mdash; far more expensive
+    </div>
+    <figcaption>Read across a row, not down a column: every product is measured against itself, so a
+    green cell means that month is cheap <em>for that product</em>. One year of data per cell.</figcaption>
+  </figure>
+
+  <p>Three patterns come straight off the grid.</p>
+
+  <p><strong>January belongs to Kids and SEJ.</strong> Both acquire at 0.55&times; their own average &mdash;
+  the cheapest cell either product has. The academic year starts in January and parents move then.</p>
+
+  <p><strong>SES runs backwards.</strong> It is the most expensive product in the portfolio in January
+  (2.86&times;) and the cheapest in September (0.55&times;). Every taka spent on SES in January is buying at
+  five times the cost of the same taka in September. It is also the one product improving month over month,
+  so the two effects compound.</p>
+
+  <p><strong>August and September punish Kids and SEJ.</strong> SEJ hits 2.38&times; and 2.52&times;; Kids
+  1.72&times;. We spent our two largest months of the year, August and September, heavily on the two
+  products that were worst at converting in them.</p>
+
+  <p class="pull">We are buying Kids in September and SES in January. Both are backwards.</p>
+
+  <p>Rebalancing the timing alone &mdash; moving 20% of each product's spend out of its three worst months
+  into its three best, with no change to total budget &mdash; is worth roughly
+  <strong>BDT 5.4M</strong> across a nine-month period on current conversion rates.</p>
+</section>
+
+<section>
+  <div class="eyebrow">Budget</div>
+  <h2>Where the money should sit</h2>
+  <p class="lede">Same total spend, different split. Each product is held at its own current CAC and its
+  own revenue per admission.</p>
+
+  <figure>
+    <div class="fig-h">
+      <div class="fig-t">Current split vs recommended</div>
+      <div class="legend">
+        <span><span class="dot" style="background:var(--ink-3)"></span>Now</span>
+        <span><span class="dot" style="background:var(--accent)"></span>Recommended</span>
+      </div>
+    </div>
+    <svg id="bg" viewBox="0 0 760 260" role="img"
+      aria-label="Recommended budget split moves Kids from 20% to 30% and cuts SEJ and SES."></svg>
+    <figcaption>Monthly figures based on the Jan&ndash;Sep average spend of BDT 897,022.</figcaption>
+  </figure>
+
+  <div class="tw">
+    <table>
+      <thead><tr>
+        <th>Split</th><th>Kids</th><th>IELTS</th><th>SEJ</th><th>SES</th>
+        <th>Admissions</th><th>Revenue</th><th>Blended CAC</th><th>ROAS</th>
+      </tr></thead>
+      <tbody>
+        <tr><td><div class="prod">Now</div></td>
+          <td>19.8%</td><td>31.5%</td><td>29.1%</td><td>19.6%</td>
+          <td class="num">4,194</td><td>68.2M</td><td>1,925</td><td>8.4&times;</td></tr>
+        <tr><td><div class="prod">A &middot; Conservative</div></td>
+          <td>26%</td><td>29%</td><td>28%</td><td>17%</td>
+          <td class="num">4,264</td><td>72.4M</td><td>1,893</td><td>9.0&times;</td></tr>
+        <tr><td><div class="prod">B &middot; Recommended</div></td>
+          <td>32%</td><td>26%</td><td>28%</td><td>14%</td>
+          <td class="num">4,317</td><td>77.0M</td><td>1,870</td><td>9.5&times;</td></tr>
+        <tr><td><div class="prod">C &middot; Aggressive</div></td>
+          <td>40%</td><td>22%</td><td>28%</td><td>10%</td>
+          <td class="num">4,387</td><td>83.1M</td><td>1,840</td><td>10.3&times;</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><strong>B is the recommendation, not C.</strong> C looks better on every line, and that is precisely
+  the problem &mdash; it assumes Kids absorbs a doubling of budget with no rise in CAC at all. Kids'
+  spend-to-CAC correlation is only +0.13, so there is headroom, but 40% of the portfolio rests on a
+  three-month year-on-year comparison. B captures most of the gain at a fraction of the risk.</p>
+
+  <p>Option B is worth about <strong>+123 admissions</strong> and <strong>BDT 8.8M</strong> over a
+  nine-month period, and pulls blended CAC from 1,925 to 1,870. Most of that gain is revenue mix rather
+  than volume &mdash; it moves budget toward the higher-value courses.</p>
+
+  <div class="callout">
+    <b>The assumption this rests on</b>
+    <p>Every figure above holds each product's CAC constant as its budget moves. That is reasonable for
+    modest shifts &mdash; Kids and IELTS show correlations of +0.14 and +0.30 between spend and CAC &mdash;
+    but it is an assumption, not a forecast.</p>
+    <p>If CAC on the products we scale degrades <b>10%</b>, Option B returns +8.0% revenue instead of
+    +13.0%; at <b>20%</b>, +3.9%. Admissions go slightly negative in both cases &mdash; the gain is in
+    revenue mix, not volume. Move in two steps and re-measure after the first.</p>
+  </div>
+
+  <p>SES is cut rather than cancelled deliberately. It is the one product with a genuine saturation signal
+  (+0.80 spend-to-CAC) and the one improving fastest. 14% keeps the recovery alive without funding the
+  saturated end of its audience.</p>
+</section>
+
+<section>
+  <div class="eyebrow">Plan</div>
+  <h2>What to do next</h2>
+  <p class="lede">Ranked by estimated revenue effect. The bars are not additive &mdash; several move the
+  same budget, so doing all of them does not give you the sum.</p>
+
+  <figure>
+    <div class="fig-h">
+      <div class="fig-t">Estimated revenue effect, nine-month basis</div>
+    </div>
+    <svg id="im" viewBox="0 0 760 300" role="img"
+      aria-label="Budget reallocation and seasonal timing are each worth about 5 million BDT; the Ramadan shift 3.7 million."></svg>
+    <figcaption>Modelled on current conversion rates and current revenue per admission. The Ramadan figure
+    is a single month that recurs annually; the others are nine-month totals.</figcaption>
+  </figure>
+
+  <ol class="acts">
+    <li><div><b>Run a geo holdout against the 2km radius</b><span>Split budget in the same weeks between
+      the current 2km setting and a wider ring &mdash; 5km, or district-level around each branch &mdash;
+      with the same creative and products. The radius clearly improves closing and clearly raises lead
+      cost; nobody has tested where those two curves cross. This is readable within a month and settles
+      the largest open question in the report.</span>
+      <span class="val">Apr&ndash;Sep cost: BDT 12.9M &middot; 816 admissions</span></div></li>
+    <li><div><b>Get SEJ's show-up rate to the portfolio average</b><span>SEJ converts 8.2% of
+      registrations into attendance against a portfolio average of 13.3% and Kids' 22.7% &mdash; on
+      22,823 leads. Simply reaching average would take SEJ from 1,882 attendees to 3,037, and at its own
+      45.3% close rate from 852 admissions to 1,375. Its CAC falls from 2,754 to 1,707.</span>
+      <span class="val">+BDT 14.4M &middot; +523 admissions</span></div></li>
+    <li><div><b>Re-split the budget toward Kids</b><span>Move to roughly 32 / 28 / 26 / 14 across
+      Kids, IELTS, SEJ and SES. Do it in two steps and re-measure CAC after the first.</span>
+      <span class="val">+BDT 8.8M &middot; +123 admissions</span></div></li>
+    <li><div><b>Move spend into each product's own strong months</b><span>Shift 20% of each product's
+      budget out of its three worst months into its three best. SES is the urgent one &mdash; it is five
+      times cheaper to acquire in September than in January.</span>
+      <span class="val">+BDT 5.4M &middot; no extra budget</span></div></li>
+    <li><div><b>Replan the calendar around Ramadan 2027</b><span>It runs about 7 February to 8 March.
+      Pull budget out of the fasting month and load it into the fortnight after Eid.
+      March 2026 cost us 259 admissions at full price.</span>
+      <span class="val">+BDT 4.8M &middot; recurs annually</span></div></li>
+    <li><div><b>Bring SES's close rate up to the IELTS standard</b><span>SES converts 25.3% of the
+      people who attend; IELTS converts 37.6% and Kids 33.8%. SES already draws the cheapest leads in the
+      portfolio &mdash; the loss is entirely in what happens after they arrive.</span>
+      <span class="val">+BDT 2.8M &middot; +388 admissions</span></div></li>
+    <li><div><b>Find out why registrations do not become attendance</b><span>This sheet records that
+      78,873 people registered and never came; it cannot say why. That answer is worth more than every
+      other item on this list combined, and it is not in the data we have. Start with the four products'
+      differing rates &mdash; Kids manages 22.7% where SEJ manages 8.2% on the same funnel.</span>
+      <span class="val">Unlocks the largest number in the report</span></div></li>
+    <li><div><b>Add revenue per admission and show-up rate to reporting; retire CPL</b><span>Revenue per
+      admission has fallen 31% on mix alone while CAC and ROAS looked steady. CPL has no relationship to
+      CAC here and invites exactly the wrong optimisation.</span>
+      <span class="val">Prevents the next surprise</span></div></li>
+  </ol>
+</section>
+
+<div class="part" id="caveats"><span class="n">PART 4</span><span class="t">Caveats</span></div>
+
+<section class="notes">
+  <h2>Read before acting</h2>
+  <div class="grid">
+    <p><b>September is a partial month</b>Every September figure is month-to-date. SES at BDT 1,086 and
+    SEJ at BDT 6,969 are the best and worst readings of the year &mdash; both may be artefacts of what has
+    been logged so far.</p>
+    <p><b>No lag adjustment</b>Each month's spend is divided by admissions recorded in the same month.
+    If a registration takes weeks to convert, CAC is overstated whenever budget is rising.</p>
+    <p><b>Monthly CAC is noisy</b>The within-product spread runs 2.8&times; to 5.8&times;. No single month
+    should drive a decision; rolling three-month figures are far more stable.</p>
+    <p><b>Media cost only</b>Excludes team, agency and the cost of running the free classes. True CAC is
+    higher, and that gap bites hardest on SES.</p>
+    <p><b>Correlation is not cause</b>The show-up link is strong and consistent, but this data shows where
+    to run the experiment, not what it will return.</p>
+    <p><b>What this report is built on</b>One source only: the MoM CAC Analysis sheet as updated on
+    24 September &mdash; spend, registrations, attendance, admissions and revenue, by product and month,
+    for 2026 and 2025. Every figure is computed from those five columns.</p>
+    <p><b>The sheet cannot explain the show-up gap</b>It records that 88% of registrations never attend.
+    It holds nothing about why &mdash; no reminder, scheduling, timing or capacity data &mdash; so this
+    report sizes that gap and stops there rather than guessing at a cause.</p>
+    <p><b>The forecasts are models, not predictions</b>Every figure in Part 3 holds current CAC, close
+    rates and revenue per admission constant while budget moves. That is a reasonable first approximation
+    and a poor second one. The sensitivity case beside Option B is the number to argue about.</p>
+    <p><b>Each cell of the calendar is one year</b>The heatmap rests on a single observation per
+    product-month. January and March repeat across 2025 and 2026 and are safe to plan on; the
+    mid-year pattern is one year of evidence and should be treated as a hypothesis to test.</p>
+    <p><b>Ramadan dates are approximate</b>2027 dates depend on moon sighting and may shift by a day.
+    The eleven-day annual drift does not.</p>
+    <p><b>2025 is a ramp year, not a steady state</b>SEJ and IELTS launched in January 2025, Kids' data
+    begins in July 2025 and SES's in December. Every year-on-year comparison here measures 2026 against a
+    year in which the products were still finding their footing, which generally flatters 2026 on
+    conversion and flatters 2025 on lead cost.</p>
+    <p><b>Comparison depth varies</b>SEJ and IELTS have nine 2025 months each, Kids has three (one of them
+    its launch month), SES has none in the overlap. The portfolio year-on-year figures use SEJ and IELTS
+    only.</p>
+    <p><b>The targeting test is observational</b>Seasonality, creative, budget and the post-Ramadan
+    recovery all moved alongside the April switch. The difference-in-differences controls for what it can;
+    only a live geo holdout settles it.</p>
+    <p><b>One reconciliation gap</b>The Kids September row is still excluded from the lead, attendance and
+    admission totals, and from the Total row's spend &mdash; a range that stops one row early. Figures here
+    are computed from the rows, not the total lines.</p>
+  </div>
+</section>
+
+<div class="foot">
+  Source: 10MS CAC Dashboard &mdash; MoM CAC Analysis, corrected file, 23 Sep 2026 &middot; 36 product-months,
+  Offline vertical &middot; Academic vertical (SSC 27, HSC 28) carries no data in either year.
+</div>
+
+</div>
+<div id="tip" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var css=getComputedStyle(document.documentElement);
+  function tok(n){return css.getPropertyValue(n).trim()}
+  var PRODS=["Kids","IELTS","SEJ","SES"];
+  var COL={Kids:"var(--s-kids)",IELTS:"var(--s-ielts)",SEJ:"var(--s-sej)",SES:"var(--s-ses)"};
+  var NS="http://www.w3.org/2000/svg";
+  function el(n,a){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);return e}
+  function fmt(n){return n.toLocaleString("en-US")}
+
+  /* ---- tooltip ---- */
+  var tip=document.getElementById("tip");
+  function bind(node,html){
+    function show(ev){
+      tip.innerHTML=html; tip.style.opacity="1";
+      var x=ev.clientX, y=ev.clientY, w=tip.offsetWidth, h=tip.offsetHeight;
+      var L=Math.min(Math.max(8,x-w/2), window.innerWidth-w-8);
+      var T=y-h-14; if(T<8) T=y+18;
+      tip.style.left=L+"px"; tip.style.top=T+"px";
+    }
+    node.classList.add("hit");
+    node.addEventListener("mouseenter",show);
+    node.addEventListener("mousemove",show);
+    node.addEventListener("mouseleave",function(){tip.style.opacity="0"});
+  }
+
+  /* ---- 1. scatter ---- */
+  var SC=[["Kids",127,845],["Kids",175,1403],["Kids",98,4931],["Kids",107,1524],["Kids",124,1722],
+    ["Kids",132,1424],["Kids",120,965],["Kids",112,2591],["Kids",103,1824],
+    ["SEJ",75,1523],["SEJ",74,2155],["SEJ",76,5064],["SEJ",97,2047],["SEJ",104,2673],["SEJ",106,2973],
+    ["SEJ",250,2333],["SEJ",142,6563],["SEJ",155,6969],
+    ["IELTS",82,1542],["IELTS",98,1360],["IELTS",147,2010],["IELTS",125,1507],["IELTS",76,2614],
+    ["IELTS",172,3275],["IELTS",100,1663],["IELTS",73,1168],["IELTS",107,1557],
+    ["SES",55,5640],["SES",63,3503],["SES",50,2958],["SES",58,1620],["SES",53,2628],["SES",49,1498],
+    ["SES",59,1484],["SES",46,1349],["SES",48,1086]];
+  var MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep"];
+  (function(){
+    var s=document.getElementById("sc"), W=760,H=400,L=62,R=14,T=14,B=48;
+    var xs=[0,240], ys=[0,7500];
+    function X(v){return L+(v-xs[0])/(xs[1]-xs[0])*(W-L-R)}
+    function Y(v){return H-B-(v-ys[0])/(ys[1]-ys[0])*(H-T-B)}
+    [0,1500,3000,4500,6000,7500].forEach(function(v){
+      s.appendChild(el("line",{x1:L,x2:W-R,y1:Y(v),y2:Y(v),class:"gl"}));
+      var t=el("text",{x:L-10,y:Y(v)+4,class:"ax","text-anchor":"end"});
+      t.textContent=v===0?"0":(v/1000)+"k"; s.appendChild(t);
+    });
+    [0,60,120,180,240].forEach(function(v){
+      var t=el("text",{x:X(v),y:H-B+22,class:"ax","text-anchor":"middle"});
+      t.textContent=v; s.appendChild(t);
+    });
+    s.appendChild(el("line",{x1:L,x2:W-R,y1:H-B,y2:H-B,stroke:tok("--rule-2"),"stroke-width":1}));
+    var xl=el("text",{x:(L+W-R)/2,y:H-6,class:"axt","text-anchor":"middle"});
+    xl.textContent="Cost per lead (BDT)"; s.appendChild(xl);
+    var yl=el("text",{x:0,y:0,class:"axt","text-anchor":"middle",transform:"translate(14,"+((T+H-B)/2)+") rotate(-90)"});
+    yl.textContent="CAC (BDT)"; s.appendChild(yl);
+    var idx={Kids:0,IELTS:0,SEJ:0,SES:0};
+    SC.forEach(function(d){
+      var p=d[0], m=MON[idx[p]++];
+      var c=el("circle",{cx:X(d[1]),cy:Y(d[2]),r:6.5,fill:COL[p],
+        stroke:tok("--surface"),"stroke-width":2,"fill-opacity":.9});
+      bind(c,"<b>"+p+" &middot; "+m+"</b><br>Lead BDT "+d[1]+" &nbsp;&rarr;&nbsp; CAC BDT "+fmt(d[2]));
+      s.appendChild(c);
+    });
+    var lg=document.getElementById("lg1");
+    PRODS.forEach(function(p){
+      var sp=document.createElement("span");
+      sp.innerHTML='<span class="dot" style="background:'+COL[p]+'"></span>'+p;
+      lg.appendChild(sp);
+    });
+  })();
+
+  /* ---- 2. dumbbell ---- */
+  (function(){
+    var D=[["Kids",.2364,.2134],["IELTS",.1919,.1377],["SES",.1213,.0868],["SEJ",.0938,.0593]];
+    var s=document.getElementById("db"), W=760,H=250,L=76,R=58,T=22,B=44;
+    var max=.30;
+    function X(v){return L+v/max*(W-L-R)}
+    var step=(H-T-B)/D.length;
+    [0,.05,.10,.15,.20,.25,.30].forEach(function(v){
+      s.appendChild(el("line",{x1:X(v),x2:X(v),y1:T-6,y2:H-B,class:"gl"}));
+      var t=el("text",{x:X(v),y:H-B+21,class:"ax","text-anchor":"middle"});
+      t.textContent=Math.round(v*100)+"%"; s.appendChild(t);
+    });
+    D.forEach(function(d,i){
+      var y=T+step*i+step/2;
+      var nm=el("text",{x:L-14,y:y+5,class:"lbl","text-anchor":"end"});
+      nm.textContent=d[0]; s.appendChild(nm);
+      s.appendChild(el("line",{x1:X(d[2]),x2:X(d[1]),y1:y,y2:y,
+        stroke:tok("--rule-2"),"stroke-width":3,"stroke-linecap":"round"}));
+      var a=el("circle",{cx:X(d[1]),cy:y,r:7,fill:tok("--ink-3"),
+        stroke:tok("--surface"),"stroke-width":2});
+      bind(a,"<b>"+d[0]+" &middot; Jan&ndash;Apr</b><br>"+(d[1]*100).toFixed(1)+"% showed up");
+      s.appendChild(a);
+      var b=el("circle",{cx:X(d[2]),cy:y,r:7.5,fill:tok("--accent"),
+        stroke:tok("--surface"),"stroke-width":2});
+      bind(b,"<b>"+d[0]+" &middot; Jun&ndash;Sep</b><br>"+(d[2]*100).toFixed(1)+"% showed up");
+      s.appendChild(b);
+      var dl=el("text",{x:X(d[1])+16,y:y+5,class:"lbl-s"});
+      dl.textContent="−"+((d[1]-d[2])*100).toFixed(1)+"pp"; s.appendChild(dl);
+    });
+    var xl=el("text",{x:(L+W-R)/2,y:H-8,class:"axt","text-anchor":"middle"});
+    xl.textContent="Registration → attendance"; s.appendChild(xl);
+  })();
+
+  /* ---- 3. allocation ---- */
+  (function(){
+    var A=[["Kids",.199,.343],["SEJ",.289,.327],["IELTS",.314,.245],["SES",.199,.085]];
+    var s=document.getElementById("al"), W=760,H=270,L=76,R=62,T=16,B=44;
+    var max=.40;
+    function X(v){return L+v/max*(W-L-R)}
+    var step=(H-T-B)/A.length, bh=15, gap=5;
+    [0,.10,.20,.30,.40].forEach(function(v){
+      s.appendChild(el("line",{x1:X(v),x2:X(v),y1:T-4,y2:H-B,class:"gl"}));
+      var t=el("text",{x:X(v),y:H-B+21,class:"ax","text-anchor":"middle"});
+      t.textContent=Math.round(v*100)+"%"; s.appendChild(t);
+    });
+    A.forEach(function(d,i){
+      var cy=T+step*i+step/2;
+      var nm=el("text",{x:L-14,y:cy+5,class:"lbl","text-anchor":"end"});
+      nm.textContent=d[0]; s.appendChild(nm);
+      var y1=cy-bh-gap/2, y2=cy+gap/2;
+      var r1=el("rect",{x:L,y:y1,width:Math.max(1,X(d[1])-L),height:bh,fill:tok("--ink-3"),rx:2});
+      bind(r1,"<b>"+d[0]+"</b><br>"+(d[1]*100).toFixed(1)+"% of budget");
+      s.appendChild(r1);
+      var r2=el("rect",{x:L,y:y2,width:Math.max(1,X(d[2])-L),height:bh,fill:COL[d[0]],rx:2});
+      bind(r2,"<b>"+d[0]+"</b><br>"+(d[2]*100).toFixed(1)+"% of revenue");
+      s.appendChild(r2);
+      var v1=el("text",{x:X(d[1])+9,y:y1+12,class:"lbl-s"});
+      v1.textContent=(d[1]*100).toFixed(0)+"%"; s.appendChild(v1);
+      var v2=el("text",{x:X(d[2])+9,y:y2+12,class:"lbl"});
+      v2.textContent=(d[2]*100).toFixed(0)+"%"; s.appendChild(v2);
+    });
+    var xl=el("text",{x:(L+W-R)/2,y:H-8,class:"axt","text-anchor":"middle"});
+    xl.textContent="Share of portfolio total"; s.appendChild(xl);
+  })();
+
+  /* ---- 4. yoy ---- */
+  (function(){
+    var Y=[["Kids",1903,1753,"3 months"],["IELTS",1406,1707,"9 months"],["SEJ",2066,2754,"9 months"]];
+    var s=document.getElementById("yy"), W=760,H=210,L=62,R=16,T=18,B=48;
+    var max=3000;
+    function Yc(v){return H-B-v/max*(H-T-B)}
+    [0,1000,2000,3000].forEach(function(v){
+      s.appendChild(el("line",{x1:L,x2:W-R,y1:Yc(v),y2:Yc(v),class:"gl"}));
+      var t=el("text",{x:L-10,y:Yc(v)+4,class:"ax","text-anchor":"end"});
+      t.textContent=v===0?"0":(v/1000)+"k"; s.appendChild(t);
+    });
+    var gw=(W-L-R)/Y.length, bw=52;
+    Y.forEach(function(d,i){
+      var cx=L+gw*i+gw/2;
+      [[d[1],tok("--ink-3"),"2025"],[d[2],tok("--accent"),"2026"]].forEach(function(p,j){
+        var x=cx-bw-4+j*(bw+8);
+        var h=Math.max(2,(H-B)-Yc(p[0]));
+        var r=el("rect",{x:x,y:Yc(p[0]),width:bw,height:h,fill:p[1],rx:3});
+        bind(r,"<b>"+d[0]+" &middot; "+p[2]+"</b><br>CAC BDT "+fmt(p[0])+"<br>"+d[3]+" compared");
+        s.appendChild(r);
+        var vl=el("text",{x:x+bw/2,y:Yc(p[0])-7,class:j?"lbl":"lbl-s","text-anchor":"middle"});
+        vl.textContent=fmt(p[0]); s.appendChild(vl);
+      });
+      var nm=el("text",{x:cx,y:H-B+21,class:"lbl","text-anchor":"middle"});
+      nm.textContent=d[0]; s.appendChild(nm);
+      var ch=Math.round((d[2]/d[1]-1)*100);
+      var dl=el("text",{x:cx,y:H-B+38,class:"lbl-s","text-anchor":"middle"});
+      dl.setAttribute("fill", ch<0?tok("--good-ink"):tok("--warn-ink"));
+      dl.textContent=(ch>0?"+":"")+ch+"%"; s.appendChild(dl);
+    });
+    s.appendChild(el("line",{x1:L,x2:W-R,y1:H-B,y2:H-B,stroke:tok("--rule-2"),"stroke-width":1}));
+  })();
+
+  /* ---- 6. leads vs attendance ---- */
+  (function(){
+    var LD=[16980,9185,8724,7966,7456,8218,6965,15277,10207];
+    var AT=[2911,1333,607,1247,1127,821,1002,1738,1319];
+    var s=document.getElementById("ga"), W=760,H=290,L=62,R=52,T=18,B=48;
+    var max=20000;
+    function X(i){return L+i/(LD.length-1)*(W-L-R)}
+    function Y(v){return H-B-v/max*(H-T-B)}
+    s.appendChild(el("rect",{x:X(1)+((X(2)-X(1))*0.6),y:T-4,width:(X(2)-X(1))*1.05,height:(H-B)-(T-4),
+      fill:tok("--accent"),"fill-opacity":.07}));
+    var rt=el("text",{x:X(2),y:T+10,class:"axt","text-anchor":"middle"});
+    rt.setAttribute("fill",tok("--accent-ink")); rt.textContent="Ramadan"; s.appendChild(rt);
+    [0,5000,10000,15000,20000].forEach(function(v){
+      s.appendChild(el("line",{x1:L,x2:W-R,y1:Y(v),y2:Y(v),class:"gl"}));
+      var t=el("text",{x:L-10,y:Y(v)+4,class:"ax","text-anchor":"end"});
+      t.textContent=v?(v/1000)+"k":"0"; s.appendChild(t);
+    });
+    MON.forEach(function(mn,i){
+      var t=el("text",{x:X(i),y:H-B+21,class:"ax","text-anchor":"middle"});
+      t.textContent=mn; s.appendChild(t);
+    });
+    [[LD,tok("--ink-3"),"Leads"],[AT,tok("--accent"),"Attended"]].forEach(function(g,gi){
+      var d=g[0].map(function(v,i){return (i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)}).join(" ");
+      s.appendChild(el("path",{d:d,fill:"none",stroke:g[1],"stroke-width":2.25,
+        "stroke-linejoin":"round","stroke-linecap":"round"}));
+      g[0].forEach(function(v,i){
+        var c=el("circle",{cx:X(i),cy:Y(v),r:4.5,fill:g[1],stroke:tok("--surface"),"stroke-width":2});
+        bind(c,"<b>"+MON[i]+" &middot; "+g[2]+"</b><br>"+fmt(v)+
+          (gi?"<br>"+(v/LD[i]*100).toFixed(1)+"% of leads":""));
+        s.appendChild(c);
+      });
+      var lb=el("text",{x:W-R+10,y:Y(g[0][8])+4,class:"lbl-s"});
+      lb.setAttribute("fill",g[1]); lb.textContent=g[2]; s.appendChild(lb);
+    });
+    s.appendChild(el("line",{x1:L,x2:W-R,y1:H-B,y2:H-B,stroke:tok("--rule-2"),"stroke-width":1}));
+  })();
+
+  /* ---- 7. admission mix ---- */
+  (function(){
+    var M=[[281,327,191,48],[83,109,173,53],[32,38,98,55],[107,83,140,107],[77,51,73,52],
+           [87,47,142,107],[153,79,138,107],[136,77,289,135],[93,41,248,137]];
+    var ORD=["Kids","SEJ","IELTS","SES"];
+    var s=document.getElementById("mx"), W=760,H=270,L=46,R=16,T=16,B=48;
+    var gw=(W-L-R)/M.length, bw=Math.min(52,gw-14);
+    [0,.25,.5,.75,1].forEach(function(v){
+      var y=T+(1-v)*(H-T-B);
+      s.appendChild(el("line",{x1:L,x2:W-R,y1:y,y2:y,class:"gl"}));
+      var t=el("text",{x:L-10,y:y+4,class:"ax","text-anchor":"end"});
+      t.textContent=Math.round(v*100)+"%"; s.appendChild(t);
+    });
+    M.forEach(function(row,i){
+      var tot=row.reduce(function(a,b){return a+b},0), acc=0;
+      var x=L+gw*i+(gw-bw)/2;
+      row.forEach(function(v,j){
+        var frac=v/tot, h=frac*(H-T-B);
+        var y=T+(H-T-B)-acc-h; acc+=h;
+        var r=el("rect",{x:x,y:y+1,width:bw,height:Math.max(1,h-2),fill:COL[ORD[j]],rx:1.5});
+        bind(r,"<b>"+MON[i]+" &middot; "+ORD[j]+"</b><br>"+v+" admissions &middot; "+
+          (frac*100).toFixed(0)+"% of the month");
+        s.appendChild(r);
+      });
+      var t=el("text",{x:x+bw/2,y:H-B+21,class:"ax","text-anchor":"middle"});
+      t.textContent=MON[i]; s.appendChild(t);
+      var tt=el("text",{x:x+bw/2,y:H-B+37,class:"lbl-s","text-anchor":"middle"});
+      tt.textContent=tot; s.appendChild(tt);
+    });
+    var lg=document.getElementById("lg2");
+    ORD.forEach(function(p){
+      var sp=document.createElement("span");
+      sp.innerHTML='<span class="dot" style="background:'+COL[p]+'"></span>'+p;
+      lg.appendChild(sp);
+    });
+  })();
+
+  /* ---- 8. CAC bridge ---- */
+  (function(){
+    var s=document.getElementById("br"), W=760,H=280,L=66,R=20,T=26,B=56;
+    var STEPS=[["2025 CAC",0,1654,"base"],["Lead price",1654,2549,"up"],
+               ["Conversion",2549,2088,"down"],["2026 CAC",0,2088,"base"]];
+    var max=2800;
+    function Y(v){return H-B-v/max*(H-T-B)}
+    var gw=(W-L-R)/STEPS.length, bw=Math.min(88,gw-34);
+    [0,700,1400,2100,2800].forEach(function(v){
+      s.appendChild(el("line",{x1:L,x2:W-R,y1:Y(v),y2:Y(v),class:"gl"}));
+      var t=el("text",{x:L-10,y:Y(v)+4,class:"ax","text-anchor":"end"});
+      t.textContent=fmt(v); s.appendChild(t);
+    });
+    STEPS.forEach(function(d,i){
+      var x=L+gw*i+(gw-bw)/2;
+      var lo=Math.min(d[1],d[2]), hi=Math.max(d[1],d[2]);
+      var fill = d[3]==="base" ? tok("--ink-3") : (d[3]==="up" ? tok("--accent") : tok("--s-ses"));
+      var r=el("rect",{x:x,y:Y(hi),width:bw,height:Math.max(3,Y(lo)-Y(hi)),fill:fill,rx:2.5});
+      var delta=d[2]-d[1];
+      bind(r, d[3]==="base"
+        ? "<b>"+d[0]+"</b><br>BDT "+fmt(d[2])+" per student"
+        : "<b>"+d[0]+"</b><br>"+(delta>0?"+":"")+fmt(Math.round(delta))+" to CAC");
+      s.appendChild(r);
+      if(i<STEPS.length-1){
+        var endY=Y(d[3]==="base"?d[2]:d[2]);
+        s.appendChild(el("line",{x1:x+bw,x2:L+gw*(i+1)+(gw-bw)/2,y1:endY,y2:endY,
+          stroke:tok("--rule-2"),"stroke-width":1.5,"stroke-dasharray":"3 3"}));
+      }
+      var lab=el("text",{x:x+bw/2,y:Y(hi)-9,class:"lbl","text-anchor":"middle"});
+      lab.textContent = d[3]==="base" ? fmt(d[2]) : (delta>0?"+":"−")+fmt(Math.abs(Math.round(delta)));
+      if(d[3]!=="base") lab.setAttribute("fill", delta>0?tok("--accent-ink"):tok("--good-ink"));
+      s.appendChild(lab);
+      var nm=el("text",{x:x+bw/2,y:H-B+21,class:"lbl-s","text-anchor":"middle"});
+      nm.textContent=d[0]; s.appendChild(nm);
+      var sub=el("text",{x:x+bw/2,y:H-B+37,class:"ax","text-anchor":"middle"});
+      sub.textContent = i===1?"CPL 67 → 103" : (i===2?"conv 4.04% → 4.93%":"");
+      s.appendChild(sub);
+    });
+    s.appendChild(el("line",{x1:L,x2:W-R,y1:H-B,y2:H-B,stroke:tok("--rule-2"),"stroke-width":1}));
+    var yl=el("text",{x:0,y:0,class:"axt","text-anchor":"middle",
+      transform:"translate(16,"+((T+H-B)/2)+") rotate(-90)"});
+    yl.textContent="CAC (BDT)"; s.appendChild(yl);
+  })();
+
+  /* ---- 8b. ROAS factor chart ---- */
+  (function(){
+    var F=[["Course price",0.016],["Conversion",0.221],["Cost per lead",-0.351],["Net effect",-0.195]];
+    var s=document.getElementById("fx"), W=760,H=250,L=150,R=90,T=20,B=52;
+    var lo=-0.40, hi=0.28;
+    function X(v){return L+(v-lo)/(hi-lo)*(W-L-R)}
+    var step=(H-T-B)/F.length, bh=Math.min(26,step-12);
+    [-0.4,-0.2,0,0.2].forEach(function(v){
+      s.appendChild(el("line",{x1:X(v),x2:X(v),y1:T-4,y2:H-B,
+        stroke:v===0?tok("--rule-2"):tok("--rule"),"stroke-width":v===0?1.5:1}));
+      var t=el("text",{x:X(v),y:H-B+21,class:"ax","text-anchor":"middle"});
+      t.textContent=(v>0?"+":"")+Math.round(v*100)+"%"; s.appendChild(t);
+    });
+    F.forEach(function(d,i){
+      var cy=T+step*i+step/2, isNet=(i===F.length-1);
+      var nm=el("text",{x:L-16,y:cy+5,class:isNet?"lbl":"lbl","text-anchor":"end"});
+      nm.textContent=d[0]; s.appendChild(nm);
+      var x0=X(0), x1=X(d[1]);
+      var fill = isNet ? tok("--ink") : (d[1]>=0 ? tok("--s-ses") : tok("--accent"));
+      var r=el("rect",{x:Math.min(x0,x1),y:cy-bh/2,width:Math.max(2,Math.abs(x1-x0)),height:bh,rx:2.5,
+        fill:fill,"fill-opacity":isNet?0.85:1});
+      bind(r,"<b>"+d[0]+"</b><br>"+(d[1]>0?"+":"")+(d[1]*100).toFixed(1)+"% effect on ROAS");
+      s.appendChild(r);
+      var neg=d[1]<0;
+      var t=el("text",{x:neg?x1+11:x1+10,y:cy+5,class:"lbl","text-anchor":"start"});
+      if(neg) t.setAttribute("fill","#fff");
+      t.textContent=(d[1]>0?"+":"")+(d[1]*100).toFixed(1)+"%"; s.appendChild(t);
+      if(isNet) s.appendChild(el("line",{x1:L-6,x2:W-R,y1:cy-step/2,y2:cy-step/2,
+        stroke:tok("--rule-2"),"stroke-width":1}));
+    });
+    var xl=el("text",{x:(L+W-R)/2,y:H-8,class:"axt","text-anchor":"middle"});
+    xl.textContent="Effect on return on ad spend"; s.appendChild(xl);
+  })();
+
+  /* ---- 8c. CPL 21-month timeline ---- */
+  (function(){
+    var V=[62,58,72,61,71,74,69,69,83,75,80,64, 78,84,101,111,86,151,137,103,124];
+    var LB=["J","F","M","A","M","J","J","A","S","O","N","D","J","F","M","A","M","J","J","A","S"];
+    var s=document.getElementById("cp"), W=760,H=280,L=58,R=26,T=22,B=62;
+    var max=170, band=[58,83];
+    function X(i){return L+i/(V.length-1)*(W-L-R)}
+    function Y(v){return H-B-v/max*(H-T-B)}
+    s.appendChild(el("rect",{x:L,y:Y(band[1]),width:W-L-R,height:Y(band[0])-Y(band[1]),
+      fill:tok("--s-ses"),"fill-opacity":.13}));
+    var bl=el("text",{x:W-R-6,y:Y(band[1])-7,class:"lbl-s","text-anchor":"end"});
+    bl.setAttribute("fill",tok("--s-ses")); bl.textContent="2025 range: 58–83"; s.appendChild(bl);
+    [0,50,100,150].forEach(function(v){
+      s.appendChild(el("line",{x1:L,x2:W-R,y1:Y(v),y2:Y(v),class:"gl"}));
+      var t=el("text",{x:L-10,y:Y(v)+4,class:"ax","text-anchor":"end"});
+      t.textContent=v; s.appendChild(t);
+    });
+    var div=X(11.5);
+    s.appendChild(el("line",{x1:div,x2:div,y1:T-6,y2:H-B,stroke:tok("--rule-2"),
+      "stroke-width":1.5,"stroke-dasharray":"4 4"}));
+    [[X(5.5),"2025"],[X(16),"2026"]].forEach(function(g){
+      var t=el("text",{x:g[0],y:H-B+38,class:"axt","text-anchor":"middle"});
+      t.textContent=g[1]; s.appendChild(t);
+    });
+    s.appendChild(el("rect",{x:X(12.6),y:T-6,width:X(14.4)-X(12.6),height:(H-B)-(T-6),
+      fill:tok("--ink-3"),"fill-opacity":.10}));
+    var rl=el("text",{x:X(13.5),y:T+4,class:"axt","text-anchor":"middle"});
+    rl.setAttribute("fill",tok("--ink-3")); rl.textContent="Ramadan"; s.appendChild(rl);
+    var brk=X(15);
+    s.appendChild(el("line",{x1:brk,x2:brk,y1:T-6,y2:H-B,stroke:tok("--accent"),
+      "stroke-width":1.75,"stroke-dasharray":"4 3"}));
+    var bt=el("text",{x:brk+8,y:T+4,class:"axt"});
+    bt.setAttribute("fill",tok("--accent-ink")); bt.textContent="Apr 2026 \u00b7 2km radius"; s.appendChild(bt);
+    var d=V.map(function(v,i){return (i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)}).join(" ");
+    s.appendChild(el("path",{d:d,fill:"none",stroke:tok("--ink-2"),"stroke-width":2,
+      "stroke-linejoin":"round","stroke-linecap":"round"}));
+    V.forEach(function(v,i){
+      var out = i>=15;
+      var c=el("circle",{cx:X(i),cy:Y(v),r:out?5:4,
+        fill: out?tok("--accent"):tok("--ink-3"),stroke:tok("--surface"),"stroke-width":1.5});
+      bind(c,"<b>"+["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][i%12]+
+        " "+(i<12?"2025":"2026")+"</b><br>CPL BDT "+v+(out?"<br>2km radius":"<br>broad targeting"));
+      s.appendChild(c);
+      var t=el("text",{x:X(i),y:H-B+20,class:"ax","text-anchor":"middle"});
+      t.textContent=LB[i]; s.appendChild(t);
+    });
+    s.appendChild(el("line",{x1:L,x2:W-R,y1:H-B,y2:H-B,stroke:tok("--rule-2"),"stroke-width":1}));
+    var yl=el("text",{x:0,y:0,class:"axt","text-anchor":"middle",
+      transform:"translate(14,"+((T+H-B)/2)+") rotate(-90)"});
+    yl.textContent="Cost per lead (BDT)"; s.appendChild(yl);
+  })();
+
+  /* ---- 8d. close rate before/after the switch ---- */
+  (function(){
+    var G=[["SES",.122,.342],["SEJ",.398,.548],["IELTS",.328,.403],["Kids",.406,.308]];
+    var s=document.getElementById("gx"), W=760,H=250,L=72,R=76,T=18,B=48;
+    var max=.60;
+    function X(v){return L+v/max*(W-L-R)}
+    var step=(H-T-B)/G.length, bh=14, gap=5;
+    [0,.15,.30,.45,.60].forEach(function(v){
+      s.appendChild(el("line",{x1:X(v),x2:X(v),y1:T-4,y2:H-B,class:"gl"}));
+      var t=el("text",{x:X(v),y:H-B+21,class:"ax","text-anchor":"middle"});
+      t.textContent=Math.round(v*100)+"%"; s.appendChild(t);
+    });
+    G.forEach(function(d,i){
+      var cy=T+step*i+step/2;
+      var nm=el("text",{x:L-14,y:cy+5,class:"lbl","text-anchor":"end"});
+      nm.textContent=d[0]; s.appendChild(nm);
+      [[d[1],tok("--ink-3"),cy-bh-gap/2,"Jan\u2013Mar, broad"],
+       [d[2],tok("--accent"),cy+gap/2,"Apr\u2013Sep, 2km"]].forEach(function(v){
+        var r=el("rect",{x:L,y:v[2],width:Math.max(2,X(v[0])-L),height:bh,fill:v[1],rx:2});
+        bind(r,"<b>"+d[0]+" &middot; "+v[3]+"</b><br>"+(v[0]*100).toFixed(1)+"% of attendees enrolled");
+        s.appendChild(r);
+        var t=el("text",{x:X(v[0])+9,y:v[2]+12,class:v[1]===tok("--accent")?"lbl":"lbl-s"});
+        t.textContent=(v[0]*100).toFixed(0)+"%"; s.appendChild(t);
+      });
+      var ch=(d[2]/d[1]-1)*100;
+      var dt=el("text",{x:W-R+58,y:cy+5,class:"lbl","text-anchor":"end"});
+      dt.setAttribute("fill", ch>=0?tok("--good-ink"):tok("--warn-ink"));
+      dt.textContent=(ch>0?"+":"")+ch.toFixed(0)+"%"; s.appendChild(dt);
+    });
+    var xl=el("text",{x:(L+W-R)/2,y:H-8,class:"axt","text-anchor":"middle"});
+    xl.textContent="Attendance \u2192 admission"; s.appendChild(xl);
+  })();
+
+  /* ---- 9. seasonal heatmap ---- */
+  (function(){
+    var IX={Kids:[0.55,0.92,3.23,1.00,1.13,0.93,0.63,1.70,1.20],
+            SEJ:[0.55,0.78,1.84,0.74,0.97,1.08,0.85,2.38,2.53],
+            IELTS:[0.90,0.80,1.18,0.88,1.53,1.92,0.97,0.68,0.91],
+            SES:[2.86,1.78,1.50,0.82,1.33,0.76,0.75,0.68,0.55]};
+    var ORD=["Kids","SEJ","IELTS","SES"];
+    function hex(c){
+      c=c.trim();
+      if(c.charAt(0)==="#"){
+        if(c.length===4) c="#"+c[1]+c[1]+c[2]+c[2]+c[3]+c[3];
+        return [parseInt(c.substr(1,2),16),parseInt(c.substr(3,2),16),parseInt(c.substr(5,2),16)];
+      }
+      var mm=c.match(/\d+/g); return mm?[+mm[0],+mm[1],+mm[2]]:[128,128,128];
+    }
+    var GOOD=hex(tok("--s-ses")), MID=hex(tok("--rule-2")), BAD=hex(tok("--accent"));
+    function mix(a,b,t){return "rgb("+a.map(function(v,i){return Math.round(v+(b[i]-v)*t)}).join(",")+")"}
+    function col(ix){
+      var t=Math.log(ix)/Math.log(2.5);
+      t=Math.max(-1,Math.min(1,t));
+      return t<0?mix(MID,GOOD,-t):mix(MID,BAD,t);
+    }
+    var s=document.getElementById("hm"), W=760,H=250,L=62,R=14,T=34,B=30;
+    var cw=(W-L-R)/9, ch=(H-T-B)/4, gap=3;
+    MON.forEach(function(mn,i){
+      var t=el("text",{x:L+cw*i+cw/2,y:T-12,class:"axt","text-anchor":"middle"});
+      t.textContent=mn; s.appendChild(t);
+    });
+    ORD.forEach(function(p,r){
+      var nm=el("text",{x:L-12,y:T+ch*r+ch/2+5,class:"lbl","text-anchor":"end"});
+      nm.textContent=p; s.appendChild(nm);
+      IX[p].forEach(function(v,i){
+        var x=L+cw*i, y=T+ch*r;
+        var rect=el("rect",{x:x+gap/2,y:y+gap/2,width:cw-gap,height:ch-gap,rx:2.5,fill:col(v)});
+        bind(rect,"<b>"+p+" &middot; "+MON[i]+"</b><br>CAC "+v.toFixed(2)+"× its own average<br>"+
+          (v<1?"cheaper than usual":"more expensive than usual"));
+        s.appendChild(rect);
+        var t=Math.abs(Math.log(v)/Math.log(2.5));
+        var lb=el("text",{x:x+cw/2,y:y+ch/2+4,"text-anchor":"middle",
+          "font-family":"Archivo,sans-serif","font-size":"11.5","font-weight":"700",
+          fill: t>0.55?"#fff":tok("--ink")});
+        lb.textContent=v.toFixed(2); s.appendChild(lb);
+      });
+    });
+  })();
+
+  /* ---- 10. budget split ---- */
+  (function(){
+    var BG=[["Kids",.198,.32],["IELTS",.315,.26],["SEJ",.291,.28],["SES",.196,.14]];
+    var AVG=897022;
+    var s=document.getElementById("bg"), W=760,H=260,L=72,R=132,T=18,B=44;
+    var max=.40;
+    function X(v){return L+v/max*(W-L-R)}
+    var step=(H-T-B)/BG.length, bh=15, gap=5;
+    [0,.10,.20,.30,.40].forEach(function(v){
+      s.appendChild(el("line",{x1:X(v),x2:X(v),y1:T-4,y2:H-B,class:"gl"}));
+      var t=el("text",{x:X(v),y:H-B+21,class:"ax","text-anchor":"middle"});
+      t.textContent=Math.round(v*100)+"%"; s.appendChild(t);
+    });
+    BG.forEach(function(d,i){
+      var cy=T+step*i+step/2;
+      var nm=el("text",{x:L-14,y:cy+5,class:"lbl","text-anchor":"end"});
+      nm.textContent=d[0]; s.appendChild(nm);
+      [[d[1],tok("--ink-3"),cy-bh-gap/2,"Now"],[d[2],tok("--accent"),cy+gap/2,"Recommended"]]
+      .forEach(function(v){
+        var r=el("rect",{x:L,y:v[2],width:Math.max(2,X(v[0])-L),height:bh,fill:v[1],rx:2});
+        bind(r,"<b>"+d[0]+" &middot; "+v[3]+"</b><br>"+(v[0]*100).toFixed(1)+"% of budget<br>BDT "+
+          fmt(Math.round(AVG*v[0]))+" a month");
+        s.appendChild(r);
+        var t=el("text",{x:X(v[0])+9,y:v[2]+12,class:v[3]==="Now"?"lbl-s":"lbl"});
+        t.textContent=(v[0]*100).toFixed(0)+"%"; s.appendChild(t);
+      });
+      var dl=(d[2]-d[1])*100;
+      var dt=el("text",{x:W-R+52,y:cy+5,class:"lbl","text-anchor":"end"});
+      dt.setAttribute("fill", dl>=0?tok("--good-ink"):tok("--warn-ink"));
+      dt.textContent=(dl>0?"+":"")+dl.toFixed(0)+"pp"; s.appendChild(dt);
+      var mo=el("text",{x:W-R+60,y:cy+5,class:"lbl-s"});
+      mo.textContent="BDT "+fmt(Math.round(AVG*d[2]/1000))+"k/mo"; s.appendChild(mo);
+    });
+    var xl=el("text",{x:(L+W-R)/2,y:H-8,class:"axt","text-anchor":"middle"});
+    xl.textContent="Share of total media budget"; s.appendChild(xl);
+  })();
+
+  /* ---- 11. action impact ---- */
+  (function(){
+    var IM=[["Hold CPL at 2025 level",21.33],["SEJ show-up to average",14.36],["Re-split the budget",8.84],
+            ["Seasonal timing",5.38],["Ramadan calendar",4.79],["SES close rate to 37.6%",2.76]];
+    var s=document.getElementById("im"), W=760,H=300,L=206,R=84,T=16,B=62;
+    var max=30;
+    function X(v){return L+v/max*(W-L-R)}
+    var step=(H-T-B)/IM.length, bh=Math.min(26,step-12);
+    [0,10,20,30].forEach(function(v){
+      s.appendChild(el("line",{x1:X(v),x2:X(v),y1:T-4,y2:H-B,class:"gl"}));
+      var t=el("text",{x:X(v),y:H-B+21,class:"ax","text-anchor":"middle"});
+      t.textContent=v+"M"; s.appendChild(t);
+    });
+    IM.forEach(function(d,i){
+      var cy=T+step*i+step/2;
+      var nm=el("text",{x:L-14,y:cy+5,class:"lbl","text-anchor":"end"});
+      nm.textContent=d[0]; s.appendChild(nm);
+      var r=el("rect",{x:L,y:cy-bh/2,width:Math.max(2,X(d[1])-L),height:bh,rx:3,
+        fill:tok("--accent"),"fill-opacity":1-i*0.12});
+      bind(r,"<b>"+d[0]+"</b><br>about BDT "+d[1].toFixed(2)+"M");
+      s.appendChild(r);
+      var t=el("text",{x:X(d[1])+10,y:cy+5,class:"lbl"});
+      t.textContent="BDT "+d[1].toFixed(1)+"M"; s.appendChild(t);
+    });
+    var xl=el("text",{x:(L+W-R)/2,y:H-8,class:"axt","text-anchor":"middle"});
+    xl.textContent="Estimated revenue effect (BDT)"; s.appendChild(xl);
+  })();
+
+  /* ---- 12. sparklines ---- */
+  var SP={
+    Kids:[845,1403,4931,1524,1722,1424,965,2591,1824],
+    IELTS:[1542,1360,2010,1507,2614,3275,1663,1168,1557],
+    SEJ:[1523,2155,5064,2047,2673,2973,2333,6563,6969],
+    SES:[5640,3503,2958,1620,2628,1498,1484,1349,1086]
+  };
+  Array.prototype.forEach.call(document.querySelectorAll(".sp"),function(s){
+    var k=s.getAttribute("data-k"), v=SP[k], W=96,H=26,P=4;
+    var lo=Math.min.apply(null,v), hi=Math.max.apply(null,v);
+    function X(i){return P+i/(v.length-1)*(W-P*2)}
+    function Yv(n){return H-P-(n-lo)/(hi-lo||1)*(H-P*2)}
+    var d=v.map(function(n,i){return (i?"L":"M")+X(i).toFixed(1)+" "+Yv(n).toFixed(1)}).join(" ");
+    s.appendChild(el("path",{d:d,fill:"none",stroke:COL[k],"stroke-width":1.75,
+      "stroke-linejoin":"round","stroke-linecap":"round","stroke-opacity":.85}));
+    s.appendChild(el("circle",{cx:X(v.length-1),cy:Yv(v[v.length-1]),r:2.6,fill:COL[k]}));
+    bind(s,"<b>"+k+" &middot; CAC by month</b><br>Jan BDT "+fmt(v[0])+" &nbsp;&rarr;&nbsp; Sep BDT "+fmt(v[8])+
+      "<br>Low BDT "+fmt(lo)+" &middot; High BDT "+fmt(hi));
+  });
+})();
+</script>
+</body>
+</html>
